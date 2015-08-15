@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: #156D85; }
+  background-color: #008FB1; }
 
 a {
   color: #17516C; }
@@ -78,9 +78,14 @@ time,
   background-color: #0D4252; }
 
 .footer-global {
-  background-color: #DFF9FF; }
+  background-color: #0D4252; }
+  .footer-global a {
+    color: #fff; }
+    .footer-global a:hover,
+    .footer-global a:focus {
+      color: #DFF9FF; }
   .footer-global .tagline-network {
-    color: #17516C; }
+    color: #fff; }
 
 .footer-local {
   background-color: #17516C; }
@@ -129,18 +134,37 @@ time,
 .home .home-modules h2 {
   color: #DFF9FF; }
 
-.home .highlights .module-heading {
-  background: #0D4252 url("../images/home-highlight.png") no-repeat center center; }
+.home .highlights,
+.home .home-intro {
+  background-color: #17516C; }
 
 .home .home-intro {
-  background-color: #DFF9FF; }
+  color: #fff; }
+  .home .home-intro h2 {
+    color: #fff; }
 
-.home .type-post,
 .home .widget_glocal_network_posts_widget li {
-  background-color: #DFF9FF; }
+  background-color: #17516C;
+  color: #fff; }
+  .home .widget_glocal_network_posts_widget li a {
+    color: #156D85; }
+  .home .widget_glocal_network_posts_widget li h4 a {
+    color: #fff; }
+
+.home .highlights {
+  background-color: #DFF9FF;
+  color: #17516C; }
+  .home .highlights a {
+    color: #156D85; }
+  .home .highlights h4 a {
+    color: #0D4252; }
+  .home .highlights .module-heading {
+    background: #17516C url("../images/home-highlight.png") no-repeat center center; }
+  .home .highlights ul.highlights-list li {
+    background-color: #DFF9FF; }
 
 .home .sites-list.no-site-image li {
-  background-color: #0D4252; }
+  background-color: #17516C; }
 
 article.post {
   background-color: #DFF9FF; }

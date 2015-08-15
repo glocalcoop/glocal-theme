@@ -2,7 +2,7 @@
 
 html,
 body {
-	background-color: $primary;
+	background-color: $primary-med-light;
 }
 
 // Common
@@ -86,10 +86,19 @@ time,
 }
 
 .footer-global {
-	background-color: $primary-light;
+	background-color: $primary-dark;
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $primary-light;
+		}
+	}
 
 	.tagline-network {
-		color: $primary-med-dark;
+		color: $white;
 	}
 }
 
@@ -177,21 +186,65 @@ time,
 		}
 	}
 
-	.highlights .module-heading {
-	    background: $primary-dark url('../images/home-highlight.png') no-repeat center center;
-	}
-
+	// Backgrounds
+	.highlights, 
 	.home-intro {
-		background-color: $primary-light;
+		background-color: $primary-med-dark;
+
 	}
 
-	.type-post,
+	// Intro
+	.home-intro {
+		color: $white;
+		h2 {
+			color: $white;
+		}
+
+	}
+
+	// Network News
 	.widget_glocal_network_posts_widget li {
-		background-color: $primary-light;
+		background-color: $primary-med-dark;
+		color: $white;
+
+		a {
+			color: $primary;
+		}
+
+		h4 a {
+			color: $white;
+		}
 	}
 
+	// Highlights
+	.highlights {
+
+		background-color: $primary-light;
+		color: $primary-med-dark;
+
+		a {
+			color: $primary;
+		}
+
+		h4 a {
+			color: $primary-dark;
+		}
+		
+		.module-heading {
+			background: $primary-med-dark url('../images/home-highlight.png') no-repeat center center;
+		}
+
+		ul.highlights-list li {
+			background-color: $primary-light;
+		}
+
+	}
+
+
+
+	// Sites List
 	.sites-list.no-site-image li {
-		background-color: $primary-dark;
+		background-color: $primary-med-dark;
 	}
 
 }
