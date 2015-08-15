@@ -1,11 +1,12 @@
-// MAIN
 
 html,
 body {
 	background-color: $primary-med-light;
 }
 
-// Common
+/***************
+* Common
+****************/
 
 a {
 
@@ -52,7 +53,6 @@ button {
 	background-color: $highlight;
 }
 
-
 // Meta
 time,
 .meta,
@@ -83,10 +83,24 @@ time,
 	}
 }
 
-// Main Sections
+/***************
+* Main Sections
+****************/
 
 .header-global {
 	background-color: $primary-dark;
+
+	.site-title a {
+
+		background-color: $primary-med-light;
+		color: $primary-dark;
+		border-color: $primary-med-dark;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
 }
 
 .footer-global {
@@ -116,7 +130,9 @@ time,
 }
 
 
-// Nav
+/***************
+* Nav
+****************/
 
 @include breakpoint(md) {
 
@@ -169,18 +185,9 @@ time,
 }
 
 
-.header-global .site-title a {
-	color: $white;
-	border-color: $white;
-
-	&:hover,
-	&:focus {
-		color: $white;
-	}
-}
-
-
-// Homepage
+/***************
+* Home Page
+****************/
 
 .home {
 
@@ -259,7 +266,9 @@ time,
 }
 
 
-// Posts & Pages
+/***************
+* Posts & Pages
+****************/
 
 article.post {
 	background-color: $primary-light;
@@ -285,7 +294,9 @@ article.post {
 }
 
 
-// BxSlider
+/***************
+* BxSlider
+****************/
 
 .bx-prev,
 .bx-next,
@@ -298,7 +309,9 @@ article.post {
 	}
 }
 
-// Comments
+/***************
+* Comments
+****************/
 
 .commentlist {
 

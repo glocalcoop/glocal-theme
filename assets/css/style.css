@@ -6,6 +6,9 @@ html,
 body {
   background-color: #008FB1; }
 
+/***************
+* Common
+****************/
 a {
   color: #17516C; }
   a:hover,
@@ -83,8 +86,18 @@ time,
   .highlights ul.highlights-list li .meta * a {
     color: #008FB1 !important; }
 
+/***************
+* Main Sections
+****************/
 .header-global {
   background-color: #0D4252; }
+  .header-global .site-title a {
+    background-color: #008FB1;
+    color: #0D4252;
+    border-color: #17516C; }
+    .header-global .site-title a:hover,
+    .header-global .site-title a:focus {
+      color: #fff; }
 
 .footer-global {
   background-color: #0D4252; }
@@ -101,6 +114,9 @@ time,
   .footer-local .copyright {
     color: #fff; }
 
+/***************
+* Nav
+****************/
 @media (min-width: 769px) {
   .nav-global .menu a,
   .nav-global .menu li.current-menu-item a,
@@ -133,13 +149,9 @@ time,
   .nav-anchors li > a:focus {
     color: #DFF9FF; }
 
-.header-global .site-title a {
-  color: #fff;
-  border-color: #fff; }
-  .header-global .site-title a:hover,
-  .header-global .site-title a:focus {
-    color: #fff; }
-
+/***************
+* Home Page
+****************/
 .home .home-modules h2 {
   color: #DFF9FF; }
 
@@ -179,6 +191,9 @@ time,
 .home .sites-list.no-site-image li {
   background-color: #17516C; }
 
+/***************
+* Posts & Pages
+****************/
 article.post {
   background-color: #DFF9FF; }
 
@@ -191,6 +206,9 @@ article.post {
   .widget li {
     border-top-color: #DFF9FF; }
 
+/***************
+* BxSlider
+****************/
 .bx-prev,
 .bx-next,
 .bx-wrapper .bx-controls-direction a {
@@ -203,6 +221,9 @@ article.post {
   .bx-wrapper .bx-controls-direction a:focus {
     color: #17516C; }
 
+/***************
+* Comments
+****************/
 .commentlist a {
   color: #156D85; }
 
