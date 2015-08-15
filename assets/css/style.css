@@ -20,12 +20,15 @@ h4 {
 
 h1,
 h2 {
-  color: #008FB1; }
+  color: #17516C; }
 
 form {
   background-color: #DFF9FF; }
 
 .button {
+  background-color: #DF4B9B; }
+
+#searchform #searchsubmit {
   background-color: #DF4B9B; }
 
 .header-global {
@@ -79,6 +82,9 @@ form {
   .header-global .site-title a:hover,
   .header-global .site-title a:focus {
     color: #fff; }
+
+.home .home-modules h2 {
+  color: #DFF9FF; }
 
 .home .highlights .module-heading {
   background: #d1cfcb url("../images/home-highlight.png") no-repeat center center; }

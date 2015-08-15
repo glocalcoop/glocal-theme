@@ -27,7 +27,7 @@ h4 {
 
 h1,
 h2 {
-	color: $primary-med-light;
+	color: $primary-med-dark;
 }
 
 form {
@@ -35,6 +35,10 @@ form {
 }
 
 .button {
+	background-color: $highlight;
+}
+
+#searchform #searchsubmit {
 	background-color: $highlight;
 }
 
@@ -130,6 +134,12 @@ form {
 // Homepage
 
 .home {
+
+	.home-modules {
+		h2 {
+			color: $primary-light;
+		}
+	}
 
 	.highlights .module-heading {
 	    background: $base7 url('../images/home-highlight.png') no-repeat center center;
