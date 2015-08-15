@@ -25,11 +25,54 @@ h2 {
 form {
   background-color: #DFF9FF; }
 
-.button {
-  background-color: #DF4B9B; }
+input[type="submit"],
+input[type="button"],
+a.button,
+a.cancel,
+button {
+  background-color: #DF4B9B !important;
+  box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset; }
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  a.button:hover,
+  a.button:focus,
+  a.cancel:hover,
+  a.cancel:focus,
+  button:hover,
+  button:focus {
+    color: #0D4252 !important; }
 
 #searchform #searchsubmit {
   background-color: #DF4B9B; }
+
+time,
+.meta,
+.byline,
+.blog-name,
+.post-date,
+.post-author,
+.post-author {
+  color: #008FB1; }
+  time a,
+  .meta a,
+  .byline a,
+  .blog-name a,
+  .post-date a,
+  .post-author a,
+  .post-author a {
+    color: #17516C; }
+
+.news-list .blog-name a,
+.news-list .post-date a,
+.home .widget_glocal_network_posts_widget .blog-name a,
+.home .widget_glocal_network_posts_widget .post-date a,
+.highlights ul.highlights-list li .post-date,
+.highlights ul.highlights-list li .blog-name a,
+.highlights ul.highlights-list li .post-categories a,
+.highlights ul.highlights-list li .meta * a {
+  color: #008FB1 !important; }
 
 .header-global {
   background-color: #0D4252; }
@@ -118,6 +161,18 @@ article.post {
   .bx-wrapper .bx-controls-direction a:hover,
   .bx-wrapper .bx-controls-direction a:focus {
     color: #17516C; }
+
+.commentlist a {
+  color: #156D85; }
+
+.commentlist .even {
+  background-color: #DFF9FF; }
+
+.commentlist .comment-reply-link {
+  background-color: #DF4B9B; }
+
+.commentlist .vcard time a {
+  color: #008FB1; }
 
 #crm-container input[type="submit"],
 #crm-container input[type="button"],

@@ -34,12 +34,48 @@ form {
 	background-color: $primary-light;
 }
 
-.button {
-	background-color: $highlight;
+input[type="submit"],
+input[type="button"],
+a.button,
+a.cancel,
+button {
+	background-color: $highlight !important;
+	box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset;
+
+	&:hover,
+	&:focus {
+		color: $primary-dark !important;
+	}
 }
 
 #searchform #searchsubmit {
 	background-color: $highlight;
+}
+
+
+// Meta
+time,
+.meta,
+.byline,
+.blog-name,
+.post-date,
+.post-author,
+.post-author {
+	color: $primary-med-light;
+	a {
+		color: $primary-med-dark;
+	}
+}
+
+.news-list .blog-name a, 
+.news-list .post-date a, 
+.home .widget_glocal_network_posts_widget .blog-name a, 
+.home .widget_glocal_network_posts_widget .post-date a,
+.highlights ul.highlights-list li .post-date,
+.highlights ul.highlights-list li .blog-name a, 
+.highlights ul.highlights-list li .post-categories a, 
+.highlights ul.highlights-list li .meta * a {
+	color: $primary-med-light !important;
 }
 
 
@@ -190,4 +226,24 @@ article.post {
 	}
 }
 
+// Comments
+
+.commentlist {
+
+	a {
+		color: $primary;
+	}
+
+	.even {
+		background-color: $primary-light;
+	}
+
+	.comment-reply-link {
+		background-color: $highlight;
+	}
+
+	.vcard time a {
+		color: $primary-med-light;
+	}
+}
 
