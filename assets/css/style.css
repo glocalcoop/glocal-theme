@@ -134,6 +134,9 @@ time,
 .home .home-modules h2 {
   color: #DFF9FF; }
 
+.home .home-modules .row {
+  border-top-color: #17516C; }
+
 .home .highlights,
 .home .home-intro {
   background-color: #17516C; }
@@ -173,6 +176,10 @@ article.post {
   background-color: #17516C !important; }
   .widget a {
     color: #fff !important; }
+  .widget ul {
+    border-bottom-color: #DFF9FF; }
+  .widget li {
+    border-top-color: #DFF9FF; }
 
 .bx-prev,
 .bx-next,

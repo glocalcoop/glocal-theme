@@ -184,7 +184,12 @@ time,
 		h2 {
 			color: $primary-light;
 		}
+
+		.row {
+			border-top-color: $hr-color;
+		}
 	}
+
 
 	// Backgrounds
 	.highlights, 
@@ -259,12 +264,22 @@ article.post {
 // Widgets
 
 .widget {
+
 	background-color: $primary-med-dark !important;
 
 	a {
 		color: $white !important;
 	}
+
+	ul {
+		border-bottom-color: $hr-alt;
+	}
+
+	li {
+		border-top-color: $hr-alt;
+	}
 }
+
 
 // BxSlider
 
