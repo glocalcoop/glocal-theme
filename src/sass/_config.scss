@@ -103,3 +103,26 @@ $layer3: 3; // cloak
 $layer4: 4; // lightbox
 $layer5: 5; // lightbox content
 
+
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+@mixin breakpoint($point) {
+	@if $point == xs {
+		@media (min-width: 321px)  { @content; } 
+	}
+	@if $point == sm {
+		@media (min-width: 481px) { @content; }
+	}
+	@if $point == md {
+		@media (min-width: 769px) { @content; }
+	}
+	@if $point == lg {
+		@media (min-width: 1025px) { @content; }
+	}
+	@else if $point == xl {
+		@media (min-width: 1200px) { @content; }
+	}
+}
+

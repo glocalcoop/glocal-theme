@@ -1,10 +1,108 @@
 // MAIN
 
 html,
-body {}
+body {
+	background-color: $primary;
+}
+
+// Common
+
+a,
+a:link {
+
+	color: $primary-med-dark;
+
+	&:hover,
+	&:focus {
+		color: $primary-dark;
+	}
+
+}
+
+.header-global {
+	background-color: $primary-dark;
+}
+
+.footer-global {
+	background-color: $primary-light;
+}
+
+.footer-local {
+	background-color: $primary-med-dark;
+}
+
+
+// Nav
+
+@include breakpoint(md) {
+
+	.nav-global {
+
+		.menu {
+			a,
+			li.current-menu-item a,
+			&> li a {
+
+				color: $white;
+
+				&:hover,
+				&:focus {
+					color: $primary-light;
+				}
+			}
+			.sub-menu {
+
+				a {
+
+					color: $primary-dark;
+
+					&:hover,
+					&:focus {
+						color: $primary;
+					}
+				}
+			}
+		}
+
+
+
+	}
+
+}
+
+
+.header-global .site-title a {
+	color: $white;
+	border-color: $white;
+}
+
 
 // Homepage
 
-.highlights .module-heading {
-    background: $base7 url('../images/home-highlight.png') no-repeat center center;
+.home {
+
+	.highlights .module-heading {
+	    background: $base7 url('../images/home-highlight.png') no-repeat center center;
+	}
+
+	.home-intro {
+		background-color: $primary-light;
+	}
+
+	.type-post,
+	.widget_glocal_network_posts_widget li {
+		background-color: $primary-light;
+	}
+
+	.sites-list.no-site-image li {
+		background-color: $primary-dark;
+	}
+
 }
+
+
+
+
+// Posts & Pages
+
+

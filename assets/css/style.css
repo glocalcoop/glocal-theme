@@ -1,5 +1,59 @@
 .highlights .module-heading {
   background: #d1cfcb url("../images/home-highlight.png") no-repeat center center; }
 
-.highlights .module-heading {
+html,
+body {
+  background-color: #2297D3; }
+
+a,
+a:link {
+  color: #17516C; }
+  a:hover,
+  a:focus,
+  a:link:hover,
+  a:link:focus {
+    color: #0F3442; }
+
+.header-global {
+  background-color: #0F3442; }
+
+.footer-global {
+  background-color: #DFEBF8; }
+
+.footer-local {
+  background-color: #17516C; }
+
+@media (min-width: 769px) {
+  .nav-global .menu a,
+  .nav-global .menu li.current-menu-item a,
+  .nav-global .menu > li a {
+    color: #fff; }
+    .nav-global .menu a:hover,
+    .nav-global .menu a:focus,
+    .nav-global .menu li.current-menu-item a:hover,
+    .nav-global .menu li.current-menu-item a:focus,
+    .nav-global .menu > li a:hover,
+    .nav-global .menu > li a:focus {
+      color: #DFEBF8; }
+  .nav-global .menu .sub-menu a {
+    color: #0F3442; }
+    .nav-global .menu .sub-menu a:hover,
+    .nav-global .menu .sub-menu a:focus {
+      color: #2297D3; } }
+
+.header-global .site-title a {
+  color: #fff;
+  border-color: #fff; }
+
+.home .highlights .module-heading {
   background: #d1cfcb url("../images/home-highlight.png") no-repeat center center; }
+
+.home .home-intro {
+  background-color: #DFEBF8; }
+
+.home .type-post,
+.home .widget_glocal_network_posts_widget li {
+  background-color: #DFEBF8; }
+
+.home .sites-list.no-site-image li {
+  background-color: #0F3442; }
