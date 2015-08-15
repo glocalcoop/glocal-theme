@@ -67,17 +67,21 @@ time,
 	}
 }
 
-.news-list .blog-name a, 
-.news-list .post-date a, 
-.home .widget_glocal_network_posts_widget .blog-name a, 
-.home .widget_glocal_network_posts_widget .post-date a,
-.highlights ul.highlights-list li .post-date,
-.highlights ul.highlights-list li .blog-name a, 
-.highlights ul.highlights-list li .post-categories a, 
-.highlights ul.highlights-list li .meta * a {
-	color: $primary-med-light !important;
-}
+.news-list .blog-name,
+.news-list .post-date,
+.home .widget_glocal_network_posts_widget .blog-name,
+.home .widget_glocal_network_posts_widget .post-date,
+.highlights ul.highlights-list li .blog-name, 
+.highlights ul.highlights-list li .post-date, 
+.highlights ul.highlights-list li .post-categories, 
+.highlights ul.highlights-list li .meta * {
 
+	color: $primary-med-light !important;
+
+	a {
+		color: $primary-med-light !important;
+	}
+}
 
 // Main Sections
 
@@ -227,6 +231,7 @@ time,
 		background-color: $primary-light;
 		color: $primary-med-dark;
 
+		time,
 		a {
 			color: $primary;
 		}
@@ -244,7 +249,6 @@ time,
 		}
 
 	}
-
 
 
 	// Sites List

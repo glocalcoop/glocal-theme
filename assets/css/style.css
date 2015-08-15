@@ -64,15 +64,24 @@ time,
   .post-author a {
     color: #17516C; }
 
-.news-list .blog-name a,
-.news-list .post-date a,
-.home .widget_glocal_network_posts_widget .blog-name a,
-.home .widget_glocal_network_posts_widget .post-date a,
+.news-list .blog-name,
+.news-list .post-date,
+.home .widget_glocal_network_posts_widget .blog-name,
+.home .widget_glocal_network_posts_widget .post-date,
+.highlights ul.highlights-list li .blog-name,
 .highlights ul.highlights-list li .post-date,
-.highlights ul.highlights-list li .blog-name a,
-.highlights ul.highlights-list li .post-categories a,
-.highlights ul.highlights-list li .meta * a {
+.highlights ul.highlights-list li .post-categories,
+.highlights ul.highlights-list li .meta * {
   color: #008FB1 !important; }
+  .news-list .blog-name a,
+  .news-list .post-date a,
+  .home .widget_glocal_network_posts_widget .blog-name a,
+  .home .widget_glocal_network_posts_widget .post-date a,
+  .highlights ul.highlights-list li .blog-name a,
+  .highlights ul.highlights-list li .post-date a,
+  .highlights ul.highlights-list li .post-categories a,
+  .highlights ul.highlights-list li .meta * a {
+    color: #008FB1 !important; }
 
 .header-global {
   background-color: #0D4252; }
@@ -157,6 +166,7 @@ time,
 .home .highlights {
   background-color: #DFF9FF;
   color: #17516C; }
+  .home .highlights time,
   .home .highlights a {
     color: #156D85; }
   .home .highlights h4 a {
