@@ -18,6 +18,16 @@ h3,
 h4 {
   font-family: "Montserrat", "Lato", Helvetica, Verdana, sans-serif; }
 
+h1,
+h2 {
+  color: #008FB1; }
+
+form {
+  background-color: #DFF9FF; }
+
+.button {
+  background-color: #DF4B9B; }
+
 .header-global {
   background-color: #0D4252; }
 
@@ -102,3 +112,22 @@ article.post {
   .bx-wrapper .bx-controls-direction a:hover,
   .bx-wrapper .bx-controls-direction a:focus {
     color: #17516C; }
+
+#crm-container input[type="submit"],
+#crm-container input[type="button"],
+#crm-container a.button,
+#crm-container a.cancel,
+#crm-container button {
+  background-color: #DF4B9B !important;
+  box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset; }
+  #crm-container input[type="submit"]:hover,
+  #crm-container input[type="submit"]:focus,
+  #crm-container input[type="button"]:hover,
+  #crm-container input[type="button"]:focus,
+  #crm-container a.button:hover,
+  #crm-container a.button:focus,
+  #crm-container a.cancel:hover,
+  #crm-container a.cancel:focus,
+  #crm-container button:hover,
+  #crm-container button:focus {
+    color: #0D4252 !important; }

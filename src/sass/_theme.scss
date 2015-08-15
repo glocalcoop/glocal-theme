@@ -25,6 +25,19 @@ h4 {
 	font-family: $heading;
 }
 
+h1,
+h2 {
+	color: $primary-med-light;
+}
+
+form {
+	background-color: $primary-light;
+}
+
+.button {
+	background-color: $highlight;
+}
+
 
 // Main Sections
 
@@ -34,7 +47,7 @@ h4 {
 
 .footer-global {
 	background-color: $primary-light;
-	
+
 	.tagline-network {
 		color: $primary-med-dark;
 	}

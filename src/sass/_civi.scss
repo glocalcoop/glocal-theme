@@ -1,0 +1,19 @@
+// Civi Styling
+// Needs its own partial :)
+
+
+#crm-container {
+	input[type="submit"],
+	input[type="button"],
+	a.button,
+	a.cancel,
+	button {
+		background-color: $highlight !important;
+		box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset;
+
+		&:hover,
+		&:focus {
+			color: $primary-dark !important;
+		}
+	}
+}
