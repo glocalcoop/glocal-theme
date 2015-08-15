@@ -1,13 +1,14 @@
 // STARTER VARIABLES AND MIXINS
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // COLORS
 
-$primary: #2297D3;
-$primary-dark: #0F3442;
+$primary: #156D85;
+$primary-dark: #0D4252;
 $primary-med-dark: #17516C;
-$primary-med-light: #2297D3;
-$primary-light: #DFEBF8;
+$primary-med-light: #008FB1;
+$primary-light: #DFF9FF;
 
 $secondary: green;
 $tertiary: yellow;
@@ -41,8 +42,8 @@ $base0: #fcfdf9;
 // Tutorial: how to use color variables properly:
 // http://sachagreif.com/sass-color-variables/
 
-$anchor-color: $teal;
-$anchor-hover: $navy;
+$anchor-color: $primary;
+$anchor-hover: $primary-dark;
 $headline-color: $base1;
 $text-color: $base2;
 $quiet-color: $base6;
@@ -54,6 +55,7 @@ $hr-alt: $base8;
 // TYPOGRAPHY
 
 $sans: "Lato", Helvetica, Verdana, sans-serif;
+$heading: 'Montserrat', $sans;
 $mono: "Courier New", Courier, monospace;
 $tracking: 1px;
 $tracking-loose: 2px;

@@ -7,8 +7,7 @@ body {
 
 // Common
 
-a,
-a:link {
+a {
 
 	color: $primary-med-dark;
 
@@ -19,16 +18,35 @@ a:link {
 
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: $heading;
+}
+
+
+// Main Sections
+
 .header-global {
 	background-color: $primary-dark;
 }
 
 .footer-global {
 	background-color: $primary-light;
+	
+	.tagline-network {
+		color: $primary-med-dark;
+	}
 }
 
 .footer-local {
 	background-color: $primary-med-dark;
+
+	.copyright {
+		color: $white;
+	}
+
 }
 
 
@@ -41,6 +59,7 @@ a:link {
 		.menu {
 			a,
 			li.current-menu-item a,
+			li.current-page-ancestor a,
 			&> li a {
 
 				color: $white;
@@ -50,11 +69,13 @@ a:link {
 					color: $primary-light;
 				}
 			}
-			.sub-menu {
+
+			.sub-menu,
+			.current-menu-item .sub-menu {
 
 				a {
 
-					color: $primary-dark;
+					color: $primary-dark !important;
 
 					&:hover,
 					&:focus {
@@ -64,16 +85,32 @@ a:link {
 			}
 		}
 
-
-
+		// triangle 'on' state
+		li.current-page-ancestor:after {
+			border-bottom-color: $primary-light;
+		}
 	}
 
+}
+
+.nav-anchors li > a {
+	color: $white;
+
+	&:hover,
+	&:focus {
+		color: $primary-light;
+	}
 }
 
 
 .header-global .site-title a {
 	color: $white;
 	border-color: $white;
+
+	&:hover,
+	&:focus {
+		color: $white;
+	}
 }
 
 
@@ -101,8 +138,33 @@ a:link {
 }
 
 
-
-
 // Posts & Pages
+
+article.post {
+	background-color: $primary-light;
+}
+
+// Widgets
+
+.widget {
+	background-color: $primary-med-dark !important;
+
+	a {
+		color: $white !important;
+	}
+}
+
+// BxSlider
+
+.bx-prev,
+.bx-next,
+.bx-wrapper .bx-controls-direction a {
+	color: $primary-dark;
+
+	&:hover,
+	&:focus {
+		color: $primary-med-dark;
+	}
+}
 
 
