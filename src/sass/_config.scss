@@ -4,15 +4,16 @@
 
 // COLORS
 
-$primary: #156D85;
-$primary-dark: #0D4252;
-$primary-med-dark: #17516C;
-$primary-med-light: #008FB1;
-$primary-light: #DFF9FF;
+$primary: #17506C;
+$primary-dark: #090A0A;
+$primary-med-dark: #0D4661;
+$primary-med-light: #7F8182;
+$primary-light: #DBDFE1;
 
-$secondary: green;
-$tertiary: yellow;
-$highlight: #DF4B9B;
+$secondary: #7A0C4D;
+$tertiary: #136D5B;
+$complement: #AB8F1D;
+$highlight: #881759;
 
 $navy: #247cc9;
 $blue: #29abe2;
@@ -128,3 +129,18 @@ $layer5: 5; // lightbox content
 	}
 }
 
+// CLEARFIX
+
+// for old markup w/clearfix class:
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// for semantic markup, a la http://blog.teamtreehouse.com/a-better-clearfix-with-sass
+%clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
