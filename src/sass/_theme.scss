@@ -185,6 +185,7 @@ a {
 * Home Page
 ****************/
 
+
 .home {
 
 	.home-modules {
@@ -202,7 +203,7 @@ a {
 
 	// Intro
 	.home-intro {
-		background-color: $primary-light;
+		background-color: $primary-med-dark;
 	}
 
 	// Highlights
@@ -211,18 +212,33 @@ a {
 	}
 
 	.highlights .module-heading {
-		background: $complement url('../images/home-highlight.png') no-repeat center center;
+		background: $secondary url('../images/home-highlight.png') no-repeat center center;
 		color: $white;
 	}
 
 	// Posts
 	.widget_glocal_network_posts_widget li {
-		background-color: $primary-light;
+		background-color: $primary-med-dark;
 	}
 
 	// Sites
-	.sites-list.no-site-image li {
+	.sites-list.no-site-image li  {
+		background-color: $secondary;
+		color: $white;
+	}
+
+	.sites-list.no-site-image li:nth-child(2n) {
 		background-color: $complement;
+		color: $white;
+	}
+
+	.sites-list.no-site-image li:nth-child(3n)  {
+		background-color: $tertiary;
+		color: $white;
+	}
+
+	.sites-list.no-site-image li:nth-child(4n)  {
+		background-color: $primary-med-dark;
 		color: $white;
 	}
 
@@ -231,17 +247,17 @@ a {
 	.home-intro {
 
 		// Text
-		color: $text-color;
+		color: $white;
 
 		// Headings
 		h2 {
-			color: $secondary;
+			color: $white;
 		}
 
 		// Meta & Links
 		a,
 		a:link {
-			color: $secondary;
+			color: $white;
 		}
 
 	}
@@ -258,7 +274,7 @@ a {
 		// Headings
 		h4,
 		h4 a {
-			color: $secondary;
+			color: $primary-med-dark;
 		}
 
 		// Meta & Links
@@ -282,23 +298,23 @@ a {
 	.widget_glocal_network_posts_widget li {
 
 		// Text
-		color: $text-color;
+		color: $white;
 
 		// Headings
 		h4,
 		h4 a {
-			color: $secondary;
+			color: $white;
 		}
 
 		// Meta & Links
 
 		meta * {
-			color: $primary-med-light;
+			color: $primary-light;
 		}
 
 		a,
 		a:link {
-			color: $secondary;
+			color: $white;
 		}
 
 	}

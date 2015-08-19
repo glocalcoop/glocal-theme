@@ -13,7 +13,7 @@ $primary-light: #DBDFE1;
 $secondary: #7A0C4D;
 $tertiary: #136D5B;
 $complement: #AB8F1D;
-$highlight: #881759;
+$highlight: $secondary;
 
 $navy: #247cc9;
 $blue: #29abe2;
@@ -43,7 +43,7 @@ $base0: #fcfdf9;
 // Tutorial: how to use color variables properly:
 // http://sachagreif.com/sass-color-variables/
 
-$anchor-color: $primary;
+$anchor-color: $highlight;
 $anchor-hover: $primary-dark;
 $headline-color: $base1;
 $text-color: $base2;
