@@ -455,7 +455,7 @@ article.post {
 	div[class^='so-widget-sow-button'] .ow-button-base a,
 	button {
 		background: $secondary !important;
-		border-color: none;
+		border: none !important;
 
 		&:hover,
 		&:visited,
