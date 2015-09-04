@@ -299,7 +299,8 @@ article.post {
 .so-widget-sow-cta .ow-button-base a,
 .so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a,
 .so-widget-sow-cta button {
-  background: #7A0C4D !important; }
+  background: #7A0C4D !important;
+  border-color: none; }
   .so-widget-sow-cta .button:hover,
   .so-widget-sow-cta .button:visited,
   .so-widget-sow-cta .button:active,
