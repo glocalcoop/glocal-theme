@@ -214,6 +214,7 @@ a {
 	.highlights .module-heading {
 		background: $secondary url('../images/home-highlight.png') no-repeat center center;
 		color: $white;
+		//border: $primary-med-dark solid 16px;
 	}
 
 	// Posts
@@ -428,4 +429,41 @@ article.post {
 	}
 }
 
+/***************
+* Plugins
+****************/
 
+.so-widget-sow-hero {
+
+	li {
+		background-color: $secondary !important;
+		color: $white;
+		@extend h2;
+		font-size: 36px;
+		min-height: 300px;
+
+		.sow-slider-image-container {
+			padding: .5em;
+		}
+	}
+}
+
+.so-widget-sow-cta {
+
+	.button,
+	.ow-button-base a,
+	div[class^='so-widget-sow-button'] .ow-button-base a,
+	button {
+		background: $secondary !important;
+
+		&:hover,
+		&:visited,
+		&:active,
+		&:focus {
+
+			color: #fff !important;
+
+		}
+	}
+
+}

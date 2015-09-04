@@ -21,13 +21,14 @@ body {
 ****************/
 h1,
 h2,
+.so-widget-sow-hero li,
 h3,
 h4 {
   font-family: "Montserrat", "Lato", Helvetica, Verdana, sans-serif; }
 
 h1,
-h2 {
-  color: #0D4661; }
+h2, .so-widget-sow-hero li {
+  color: #033045; }
 
 form {
   background-color: #DBDFE1; }
@@ -71,10 +72,10 @@ time,
   .post-date a,
   .post-author a,
   .post-author a {
-    color: #0D4661; }
+    color: #033045; }
 
 a {
-  color: #0D4661; }
+  color: #033045; }
   a:hover,
   a:focus {
     color: #090A0A; }
@@ -87,10 +88,10 @@ a {
   .header-global .site-title a {
     background-color: #DBDFE1;
     color: #090A0A;
-    border-color: #0D4661; }
+    border-color: #033045; }
     .header-global .site-title a:hover,
     .header-global .site-title a:focus {
-      color: #0D4661; }
+      color: #033045; }
 
 .footer-global {
   background-color: #090A0A; }
@@ -103,7 +104,7 @@ a {
     color: #fff; }
 
 .footer-local {
-  background-color: #0D4661; }
+  background-color: #033045; }
   .footer-local .copyright {
     color: #fff; }
 
@@ -145,14 +146,14 @@ a {
 /***************
 * Home Page
 ****************/
-.home .home-modules h2 {
+.home .home-modules h2, .home .home-modules .so-widget-sow-hero li, .so-widget-sow-hero .home .home-modules li {
   color: #fff; }
 
 .home .home-modules .row {
-  border-top-color: #0D4661; }
+  border-top-color: #033045; }
 
 .home .home-intro {
-  background-color: #0D4661; }
+  background-color: #033045; }
 
 .home .highlights ul.highlights-list li {
   background-color: #DBDFE1; }
@@ -162,7 +163,7 @@ a {
   color: #fff; }
 
 .home .widget_glocal_network_posts_widget li {
-  background-color: #0D4661; }
+  background-color: #033045; }
 
 .home .sites-list.no-site-image li {
   background-color: #7A0C4D;
@@ -177,12 +178,12 @@ a {
   color: #fff; }
 
 .home .sites-list.no-site-image li:nth-child(4n) {
-  background-color: #0D4661;
+  background-color: #033045;
   color: #fff; }
 
 .home .home-intro {
   color: #fff; }
-  .home .home-intro h2 {
+  .home .home-intro h2, .home .home-intro .so-widget-sow-hero li, .so-widget-sow-hero .home .home-intro li {
     color: #fff; }
   .home .home-intro a,
   .home .home-intro a:link {
@@ -193,7 +194,7 @@ a {
   color: #333231; }
   .home .highlights h4,
   .home .highlights h4 a {
-    color: #0D4661; }
+    color: #033045; }
   .home .highlights ul.highlights-list li .blog-name,
   .home .highlights ul.highlights-list li .post-date,
   .home .highlights ul.highlights-list li .post-categories,
@@ -223,7 +224,7 @@ article.post {
   background-color: #DBDFE1; }
 
 .widget {
-  background-color: #0D4661 !important; }
+  background-color: #033045 !important; }
   .widget a {
     color: #fff !important; }
   .widget ul {
@@ -253,7 +254,7 @@ article.post {
   .bx-next:focus,
   .bx-wrapper .bx-controls-direction a:hover,
   .bx-wrapper .bx-controls-direction a:focus {
-    color: #0D4661; }
+    color: #033045; }
 
 /***************
 * Comments
@@ -282,6 +283,40 @@ article.post {
 #crm-container .cancel:hover,
 #crm-container .cancel:focus {
   color: #fff !important; }
+
+/***************
+* Plugins
+****************/
+.so-widget-sow-hero li {
+  background-color: #7A0C4D !important;
+  color: #fff;
+  font-size: 36px;
+  min-height: 300px; }
+  .so-widget-sow-hero li .sow-slider-image-container {
+    padding: .5em; }
+
+.so-widget-sow-cta .button,
+.so-widget-sow-cta .ow-button-base a,
+.so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a,
+.so-widget-sow-cta button {
+  background: #7A0C4D !important; }
+  .so-widget-sow-cta .button:hover,
+  .so-widget-sow-cta .button:visited,
+  .so-widget-sow-cta .button:active,
+  .so-widget-sow-cta .button:focus,
+  .so-widget-sow-cta .ow-button-base a:hover,
+  .so-widget-sow-cta .ow-button-base a:visited,
+  .so-widget-sow-cta .ow-button-base a:active,
+  .so-widget-sow-cta .ow-button-base a:focus,
+  .so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a:hover,
+  .so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a:visited,
+  .so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a:active,
+  .so-widget-sow-cta div[class^='so-widget-sow-button'] .ow-button-base a:focus,
+  .so-widget-sow-cta button:hover,
+  .so-widget-sow-cta button:visited,
+  .so-widget-sow-cta button:active,
+  .so-widget-sow-cta button:focus {
+    color: #fff !important; }
 
 #crm-container input[type="submit"],
 #crm-container input[type="button"],
