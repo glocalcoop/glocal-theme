@@ -160,6 +160,7 @@ a {
 
 .home .highlights .module-heading {
   background: #7A0C4D url("../images/home-highlight.png") no-repeat center center;
+  background-size: cover;
   color: #fff; }
 
 .home .widget_glocal_network_posts_widget li {

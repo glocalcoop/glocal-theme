@@ -213,6 +213,7 @@ a {
 
 	.highlights .module-heading {
 		background: $secondary url('../images/home-highlight.png') no-repeat center center;
+		background-size: cover;
 		color: $white;
 		//border: $primary-med-dark solid 16px;
 	}
