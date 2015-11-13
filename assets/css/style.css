@@ -300,6 +300,9 @@ article.post {
     .wp-caption-text {
       text-align: left !important; } }
 
+.post p + p {
+  margin-top: 1.5em; }
+
 .widget {
   background-color: #033045 !important; }
   .widget a {

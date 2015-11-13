@@ -479,6 +479,12 @@ article.post {
     }
 }
 
+.post {
+    p + p {
+        margin-top: 1.5em;
+    }
+}
+
 // Widgets
 
 .widget {
