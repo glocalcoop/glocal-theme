@@ -30,6 +30,17 @@ h1,
 h2, .so-widget-sow-hero li {
   color: #033045; }
 
+h1.page-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.25rem; }
+
+h2, .so-widget-sow-hero li {
+  font-size: 2rem; }
+
+.entry-content h2:first-child, .entry-content .so-widget-sow-hero li:first-child, .so-widget-sow-hero .entry-content li:first-child {
+  margin-top: 1em; }
+
 form {
   background-color: #DBDFE1; }
 
@@ -280,7 +291,15 @@ a {
 * Posts & Pages
 ****************/
 article.post {
-  background-color: #DBDFE1; }
+  background-color: #fff; }
+
+.wp-caption-text {
+  color: #17506C;
+  font-size: .9rem;
+  font-style: italic; }
+  @media (min-width: 769px) {
+    .wp-caption-text {
+      text-align: left !important; } }
 
 .widget {
   background-color: #033045 !important; }
@@ -378,6 +397,12 @@ article.post {
   .so-widget-sow-cta button:active,
   .so-widget-sow-cta button:focus {
     color: #fff !important; }
+
+.page ul.no-bullets {
+  list-style: none; }
+
+.page .fa {
+  color: #7A0C4D; }
 
 #crm-container input[type="submit"],
 #crm-container input[type="button"],

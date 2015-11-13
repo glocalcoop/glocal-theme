@@ -28,6 +28,23 @@ h2 {
     color: $primary-med-dark;
 }
 
+h1.page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+
+
+
+}
+
+.entry-content h2:first-child {
+    margin-top: 1em;
+}
+
 form {
     background-color: $primary-light;
 }
@@ -197,9 +214,6 @@ a {
             border-top-color: $hr-color;
         }
     }
-
-
-    // Backgrounds
 
     // Intro
     .home-start {
@@ -452,7 +466,17 @@ a {
 ****************/
 
 article.post {
-    background-color: $primary-light;
+    background-color: $white;
+}
+
+.wp-caption-text {
+    color: $primary;
+    font-size: .9rem;
+    font-style: italic;
+
+    @include breakpoint(md) {
+        text-align: left !important;
+    }
 }
 
 // Widgets
@@ -592,6 +616,18 @@ article.post {
         }
     }
 
+}
+
+
+.page {
+
+    ul.no-bullets {
+        list-style: none;
+    }
+
+    .fa {
+        color: $secondary;
+    }
 }
 
 
