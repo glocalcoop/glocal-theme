@@ -152,7 +152,65 @@ a {
 .home .home-modules .row {
   border-top-color: #033045; }
 
-.home .home-intro {
+.home .home-start .home-posts {
+  padding: 2em;
+  text-align: center; }
+  .home .home-start .home-posts h2, .home .home-start .home-posts .so-widget-sow-hero li, .so-widget-sow-hero .home .home-start .home-posts li {
+    text-transform: uppercase; }
+  .home .home-start .home-posts p {
+    max-width: 100%;
+    font-size: 120%; }
+  .home .home-start .home-posts strong {
+    font-size: 1.5em;
+    font-weight: normal; }
+  .home .home-start .home-posts .post-thumbnail img {
+    max-width: 100%; }
+  .home .home-start .home-posts.standard .post-thumbnail img {
+    -webkit-filter: invert(1);
+    filter: invert(1); }
+  .home .home-start .home-posts.standard a.button,
+  .home .home-start .home-posts.standard a.button:hover,
+  .home .home-start .home-posts.standard a.button:focus {
+    margin-top: 2em;
+    background-color: #fff !important;
+    color: #17506C !important; }
+  @media (min-width: 769px) {
+    .home .home-start .home-posts.standard {
+      padding: 3em;
+      text-align: inherit; }
+      .home .home-start .home-posts.standard .post-thumbnail {
+        float: left;
+        margin: 0 2em 2em 0; }
+      .home .home-start .home-posts.standard a.button {
+        float: right; } }
+  .home .home-start .home-posts.alternate {
+    border: 20px solid #033045;
+    background-color: #fff; }
+    .home .home-start .home-posts.alternate h2,
+    .home .home-start .home-posts.alternate .so-widget-sow-hero li,
+    .so-widget-sow-hero .home .home-start .home-posts.alternate li, .home .home-start .home-posts.alternate h2 a, .home .home-start .home-posts.alternate .so-widget-sow-hero li a, .so-widget-sow-hero .home .home-start .home-posts.alternate li a {
+      color: #7A0C4D; }
+    .home .home-start .home-posts.alternate strong {
+      color: #7A0C4D; }
+    .home .home-start .home-posts.alternate a.button,
+    .home .home-start .home-posts.alternate a.button:hover,
+    .home .home-start .home-posts.alternate a.button:focus {
+      background-color: #a8116a;
+      color: #fff !important; }
+    .home .home-start .home-posts.alternate .post-thumbnail img {
+      -webkit-filter: opacity(0.2);
+      filter: opacity(0.2); }
+    @media (min-width: 769px) {
+      .home .home-start .home-posts.alternate {
+        border: 30px solid #033045;
+        text-align: inherit; }
+        .home .home-start .home-posts.alternate .post-thumbnail {
+          float: left;
+          margin: 0 2em 2em 0; }
+        .home .home-start .home-posts.alternate a.button {
+          float: right; } }
+
+.home .home-intro, .home .home-start .home-posts.standard {
   background-color: #033045; }
 
 .home .highlights ul.highlights-list li {
@@ -182,12 +240,12 @@ a {
   background-color: #033045;
   color: #fff; }
 
-.home .home-intro {
+.home .home-intro, .home .home-start .home-posts.standard {
   color: #fff; }
-  .home .home-intro h2, .home .home-intro .so-widget-sow-hero li, .so-widget-sow-hero .home .home-intro li {
+  .home .home-intro h2, .home .home-start .home-posts.standard h2, .home .home-intro .so-widget-sow-hero li, .so-widget-sow-hero .home .home-intro li, .home .home-start .home-posts.standard .so-widget-sow-hero li, .so-widget-sow-hero .home .home-start .home-posts.standard li {
     color: #fff; }
   .home .home-intro a,
-  .home .home-intro a:link {
+  .home .home-start .home-posts.standard a, .home .home-intro a:link, .home .home-start .home-posts.standard a:link {
     color: #fff; }
 
 .home .highlights {
@@ -248,7 +306,7 @@ article.post {
 .bx-prev,
 .bx-next,
 .bx-wrapper .bx-controls-direction a {
-  color: #7A0C4D; }
+  color: #fff; }
   .bx-prev:hover,
   .bx-prev:focus,
   .bx-next:hover,

@@ -1,15 +1,15 @@
 
 html,
 body {
-	background-color: $primary;
+    background-color: $primary;
 }
 
 .content section {
-	@extend %clearfix;
+    @extend %clearfix;
 
-	& > article {
-		@extend %clearfix;
-	}
+    & > article {
+        @extend %clearfix;
+    }
 }
 
 /***************
@@ -20,16 +20,16 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: $heading;
+    font-family: $heading;
 }
 
 h1,
 h2 {
-	color: $primary-med-dark;
+    color: $primary-med-dark;
 }
 
 form {
-	background-color: $primary-light;
+    background-color: $primary-light;
 }
 
 input[type="submit"],
@@ -37,17 +37,17 @@ input[type="button"],
 a.button,
 a.cancel,
 button {
-	background-color: $highlight !important;
-	box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset;
+    background-color: $highlight !important;
+    box-shadow: 0 -3px 0 rgba(0, 169, 157, 0.2) inset;
 
-	&:hover,
-	&:focus {
-		color: $primary-dark !important;
-	}
+    &:hover,
+    &:focus {
+        color: $primary-dark !important;
+    }
 }
 
 #searchform #searchsubmit {
-	background-color: $highlight;
+    background-color: $highlight;
 }
 
 // Meta
@@ -60,21 +60,21 @@ time,
 .post-author,
 .post-author {
 
-	color: $primary-med-light;
+    color: $primary-med-light;
 
-	a {
-		color: $primary-med-dark;
-	}
+    a {
+        color: $primary-med-dark;
+    }
 }
 
 a {
 
-	color: $primary-med-dark;
+    color: $primary-med-dark;
 
-	&:hover,
-	&:focus {
-		color: $primary-dark;
-	}
+    &:hover,
+    &:focus {
+        color: $primary-dark;
+    }
 
 }
 
@@ -84,44 +84,44 @@ a {
 ****************/
 
 .header-global {
-	background-color: $primary-dark;
+    background-color: $primary-dark;
 
-	.site-title a {
+    .site-title a {
 
-		background-color: $primary-light;
-		color: $primary-dark;
-		border-color: $primary-med-dark;
+        background-color: $primary-light;
+        color: $primary-dark;
+        border-color: $primary-med-dark;
 
-		&:hover,
-		&:focus {
-			color: $primary-med-dark;
-		}
-	}
+        &:hover,
+        &:focus {
+            color: $primary-med-dark;
+        }
+    }
 }
 
 .footer-global {
-	background-color: $primary-dark;
+    background-color: $primary-dark;
 
-	a {
-		color: $white;
+    a {
+        color: $white;
 
-		&:hover,
-		&:focus {
-			color: $primary-light;
-		}
-	}
+        &:hover,
+        &:focus {
+            color: $primary-light;
+        }
+    }
 
-	.tagline-network {
-		color: $white;
-	}
+    .tagline-network {
+        color: $white;
+    }
 }
 
 .footer-local {
-	background-color: $primary-med-dark;
+    background-color: $primary-med-dark;
 
-	.copyright {
-		color: $white;
-	}
+    .copyright {
+        color: $white;
+    }
 
 }
 
@@ -132,52 +132,52 @@ a {
 
 @include breakpoint(md) {
 
-	.nav-global {
+    .nav-global {
 
-		.menu {
-			a,
-			li.current-menu-item a,
-			li.current-page-ancestor a,
-			&> li a {
+        .menu {
+            a,
+            li.current-menu-item a,
+            li.current-page-ancestor a,
+            &> li a {
 
-				color: $white;
+                color: $white;
 
-				&:hover,
-				&:focus {
-					color: $primary-light;
-				}
-			}
+                &:hover,
+                &:focus {
+                    color: $primary-light;
+                }
+            }
 
-			.sub-menu,
-			.current-menu-item .sub-menu {
+            .sub-menu,
+            .current-menu-item .sub-menu {
 
-				a {
+                a {
 
-					color: $primary-dark !important;
+                    color: $primary-dark !important;
 
-					&:hover,
-					&:focus {
-						color: $primary;
-					}
-				}
-			}
-		}
+                    &:hover,
+                    &:focus {
+                        color: $primary;
+                    }
+                }
+            }
+        }
 
-		// triangle 'on' state
-		li.current-page-ancestor:after {
-			border-bottom-color: $primary-light;
-		}
-	}
+        // triangle 'on' state
+        li.current-page-ancestor:after {
+            border-bottom-color: $primary-light;
+        }
+    }
 
 }
 
 .nav-anchors li > a {
-	color: $white;
+    color: $white;
 
-	&:hover,
-	&:focus {
-		color: $primary-light;
-	}
+    &:hover,
+    &:focus {
+        color: $primary-light;
+    }
 }
 
 
@@ -188,149 +188,261 @@ a {
 
 .home {
 
-	.home-modules {
-		h2 {
-			color: $white;
-		}
+    .home-modules {
+        h2 {
+            color: $white;
+        }
 
-		.row {
-			border-top-color: $hr-color;
-		}
-	}
-
-
-	// Backgrounds
-
-	// Intro
-	.home-intro {
-		background-color: $primary-med-dark;
-	}
-
-	// Highlights
-	.highlights ul.highlights-list li {
-		background-color: $primary-light;
-	}
-
-	.highlights .module-heading {
-		background: $secondary url('../images/home-highlight.png') no-repeat top center;
-		background-size: cover;
-		color: $white;
-		//border: $primary-med-dark solid 16px;
-	}
-
-	// Posts
-	.widget_glocal_network_posts_widget li {
-		background-color: $primary-med-dark;
-	}
-
-	// Sites
-	.sites-list.no-site-image li  {
-		background-color: $secondary;
-		color: $white;
-	}
-
-	.sites-list.no-site-image li:nth-child(2n) {
-		background-color: $complement;
-		color: $white;
-	}
-
-	.sites-list.no-site-image li:nth-child(3n)  {
-		background-color: $tertiary;
-		color: $white;
-	}
-
-	.sites-list.no-site-image li:nth-child(4n)  {
-		background-color: $primary-med-dark;
-		color: $white;
-	}
+        .row {
+            border-top-color: $hr-color;
+        }
+    }
 
 
-	// Intro
-	.home-intro {
+    // Backgrounds
 
-		// Text
-		color: $white;
+    // Intro
+    .home-start {
 
-		// Headings
-		h2 {
-			color: $white;
-		}
+        .home-posts {
 
-		// Meta & Links
-		a,
-		a:link {
-			color: $white;
-		}
+            padding: 2em;
+            text-align: center;
 
-	}
+            h2 {
+                text-transform: uppercase;
+            }
 
-	// Highlights
+            p {
+                max-width: 100%;
+                font-size: 120%;
+            }
 
-	.highlights {
+            strong {
+                font-size: 1.5em;
+                font-weight: normal;
+            }
 
-		margin-bottom: 20px;
+            .post-thumbnail img {
+                max-width: 100%;
+            }
 
-		// Text
-		color: $text-color;
+            &.standard {
 
-		// Headings
-		h4,
-		h4 a {
-			color: $primary-med-dark;
-		}
+                @extend .home-intro;
 
-		// Meta & Links
+                .post-thumbnail img {
+                    -webkit-filter: invert(1);
+                    filter: invert(1);
 
-		ul.highlights-list li .blog-name, 
-		ul.highlights-list li .post-date, 
-		ul.highlights-list li .post-categories, 
-		ul.highlights-list li .meta * {
+                }
 
-			color: $primary-med-light;
+                a.button,
+                a.button:hover,
+                a.button:focus {
+                    margin-top: 2em;
+                    background-color: $white !important;
+                    color: $primary !important;
+                }
 
-			a {
-				color: $secondary;
-			}
-		}
+                @include breakpoint(md) {
 
-	}
+                    padding: 3em;
+                    text-align: inherit;
+
+                    .post-thumbnail {
+                        float: left;
+                        margin: 0 2em 2em 0;
+                    }
+
+                    a {
+                        &.button, {
+                            float: right;
+                        }
+                    }
+
+                }                
+            }
+
+            &.alternate {
+
+                border: 20px solid $primary-med-dark;
+                background-color: $white;
+
+                h2,
+                h2 a {
+                    color: $secondary;
+                }
+
+                strong {
+                    color: $secondary;
+                }
+
+                a {
+                    &.button,
+                    &.button:hover,
+                    &.button:focus {
+                        background-color: lighten( $secondary, 10 );
+                        color: $white !important;
+                    }
+                }
+
+                .post-thumbnail img {
+                    -webkit-filter: opacity(.2);
+                    filter: opacity(.2);
+                }
+
+                @include breakpoint(md) {
+
+                    border: 30px solid $primary-med-dark;
+                    text-align: inherit;
+
+                    .post-thumbnail {
+                        float: left;
+                        margin: 0 2em 2em 0;
+                    }
+
+                    a {
+                        &.button, {
+                            float: right;
+                        }
+                    }
+
+                }                
+            }
+
+        }
+
+    }
+
+    .home-intro {
+        background-color: $primary-med-dark;
+    }
+
+    // Highlights
+    .highlights ul.highlights-list li {
+        background-color: $primary-light;
+    }
+
+    .highlights .module-heading {
+        background: $secondary url('../images/home-highlight.png') no-repeat top center;
+        background-size: cover;
+        color: $white;
+    }
+
+    // Posts
+    .widget_glocal_network_posts_widget li {
+        background-color: $primary-med-dark;
+    }
+
+    // Sites
+    .sites-list.no-site-image li  {
+        background-color: $secondary;
+        color: $white;
+    }
+
+    .sites-list.no-site-image li:nth-child(2n) {
+        background-color: $complement;
+        color: $white;
+    }
+
+    .sites-list.no-site-image li:nth-child(3n)  {
+        background-color: $tertiary;
+        color: $white;
+    }
+
+    .sites-list.no-site-image li:nth-child(4n)  {
+        background-color: $primary-med-dark;
+        color: $white;
+    }
 
 
-	// Network News
-	.widget_glocal_network_posts_widget li {
+    // Intro
+    .home-intro {
 
-		// Text
-		color: $white;
+        // Text
+        color: $white;
 
-		// Headings
-		h4,
-		h4 a {
-			color: $white;
-		}
+        // Headings
+        h2 {
+            color: $white;
+        }
 
-		// Meta & Links
+        // Meta & Links
+        a,
+        a:link {
+            color: $white;
+        }
 
-		meta * {
-			color: $primary-light;
-		}
+    }
 
-		a,
-		a:link {
-			color: $white;
-		}
+    // Highlights
 
-	}
+    .highlights {
 
-	// Sites List
-	.sites-list.no-site-image li {
+        margin-bottom: 20px;
 
-		// Text
+        // Text
+        color: $text-color;
 
-		// Headings
+        // Headings
+        h4,
+        h4 a {
+            color: $primary-med-dark;
+        }
 
-		// Meta & Links
+        // Meta & Links
 
-	}
+        ul.highlights-list li .blog-name, 
+        ul.highlights-list li .post-date, 
+        ul.highlights-list li .post-categories, 
+        ul.highlights-list li .meta * {
+
+            color: $primary-med-light;
+
+            a {
+                color: $secondary;
+            }
+        }
+
+    }
+
+
+    // Network News
+    .widget_glocal_network_posts_widget li {
+
+        // Text
+        color: $white;
+
+        // Headings
+        h4,
+        h4 a {
+            color: $white;
+        }
+
+        // Meta & Links
+
+        meta * {
+            color: $primary-light;
+        }
+
+        a,
+        a:link {
+            color: $white;
+        }
+
+    }
+
+    // Sites List
+    .sites-list.no-site-image li {
+
+        // Text
+
+        // Headings
+
+        // Meta & Links
+
+    }
 
 }
 
@@ -340,38 +452,38 @@ a {
 ****************/
 
 article.post {
-	background-color: $primary-light;
+    background-color: $primary-light;
 }
 
 // Widgets
 
 .widget {
 
-	background-color: $primary-med-dark !important;
+    background-color: $primary-med-dark !important;
 
-	a {
-		color: $white !important;
-	}
+    a {
+        color: $white !important;
+    }
 
-	ul {
-		border-bottom-color: $hr-alt;
-	}
+    ul {
+        border-bottom-color: $hr-alt;
+    }
 
-	li {
-		border-top-color: $hr-alt;
-	}
+    li {
+        border-top-color: $hr-alt;
+    }
 }
 
 .widget:nth-child(1) {
-	background-color: $complement !important;
+    background-color: $complement !important;
 }
 
 .widget:nth-child(2) {
-	background-color: $secondary !important;
+    background-color: $secondary !important;
 }
 
 .widget:nth-child(3) {
-	background-color: $tertiary !important;
+    background-color: $tertiary !important;
 }
 
 
@@ -382,12 +494,12 @@ article.post {
 .bx-prev,
 .bx-next,
 .bx-wrapper .bx-controls-direction a {
-	color: $secondary;
+    color: $white;
 
-	&:hover,
-	&:focus {
-		color: $primary-med-dark;
-	}
+    &:hover,
+    &:focus {
+        color: $primary-med-dark;
+    }
 }
 
 /***************
@@ -396,21 +508,21 @@ article.post {
 
 .commentlist {
 
-	a {
-		color: $primary;
-	}
+    a {
+        color: $primary;
+    }
 
-	.even {
-		background-color: $primary-light;
-	}
+    .even {
+        background-color: $primary-light;
+    }
 
-	.comment-reply-link {
-		background-color: $highlight;
-	}
+    .comment-reply-link {
+        background-color: $highlight;
+    }
 
-	.vcard time a {
-		color: $primary-med-light;
-	}
+    .vcard time a {
+        color: $primary-med-light;
+    }
 }
 
 /***************
@@ -418,16 +530,16 @@ article.post {
 ****************/
 
 #crm-container {
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	input[type="button"]:hover,
-	input[type="button"]:focus,
-	.button:hover,
-	.button:focus,
-	.cancel:hover,
-	.cancel:focus {
-		color: $white !important;
-	}
+    input[type="submit"]:hover,
+    input[type="submit"]:focus,
+    input[type="button"]:hover,
+    input[type="button"]:focus,
+    .button:hover,
+    .button:focus,
+    .cancel:hover,
+    .cancel:focus {
+        color: $white !important;
+    }
 }
 
 /***************
@@ -436,37 +548,50 @@ article.post {
 
 .so-widget-sow-hero {
 
-	li {
-		background-color: $secondary !important;
-		color: $white;
-		@extend h2;
-		font-size: 36px;
-		min-height: 300px;
+    li {
+        background-color: $secondary !important;
+        color: $white;
+        @extend h2;
+        font-size: 36px;
+        min-height: 300px;
 
-		.sow-slider-image-container {
-			padding: .5em;
-		}
-	}
+        .sow-slider-image-container {
+            padding: .5em;
+        }
+    }
 }
 
 .so-widget-sow-cta {
 
-	.button,
-	.ow-button-base a,
-	div[class^='so-widget-sow-button'] .ow-button-base a,
-	button {
-		background: $secondary !important;
-		border: none !important;
-		font-family: $heading;
+    .button,
+    .ow-button-base a,
+    div[class^='so-widget-sow-button'] .ow-button-base a,
+    button {
+        background: $secondary !important;
+        border: none !important;
+        font-family: $heading;
 
-		&:hover,
-		&:visited,
-		&:active,
-		&:focus {
+        &:hover,
+        &:visited,
+        &:active,
+        &:focus {
 
-			color: #fff !important;
+            color: #fff !important;
 
-		}
-	}
+        }
+    }
 
 }
+
+.widget_sow-features {
+
+    .sow-features-list {
+
+        .sow-features-feature {
+
+        }
+    }
+
+}
+
+
