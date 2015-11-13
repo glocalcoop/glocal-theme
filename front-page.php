@@ -9,8 +9,9 @@
 
             <section class="home-start">
             
-                <?php 
-                if( !empty( get_the_content() ) ) : ?>
+                <?php
+                $content = get_the_content();
+                if( !empty( $content ) ) : ?>
 
                     <?php if( is_page('Home') ) : ?>
 
