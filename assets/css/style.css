@@ -300,7 +300,10 @@ article.post {
     .wp-caption-text {
       text-align: left !important; } }
 
-.post p + p {
+.post .entry-content p {
+  max-width: 100%; }
+
+.post .entry-content p + p {
   margin-top: 1.5em; }
 
 .widget {

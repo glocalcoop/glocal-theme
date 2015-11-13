@@ -36,9 +36,6 @@ h1.page-title {
 
 h2 {
     font-size: 2rem;
-
-
-
 }
 
 .entry-content h2:first-child {
@@ -480,8 +477,16 @@ article.post {
 }
 
 .post {
-    p + p {
-        margin-top: 1.5em;
+
+    .entry-content {
+        p {
+            max-width: 100%
+        }
+
+        p + p {
+            margin-top: 1.5em;
+        }
+
     }
 }
 
