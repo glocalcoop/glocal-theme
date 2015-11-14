@@ -37,13 +37,13 @@ if(! function_exists( 'glocal_allow_svg' ) ) {
 
 
 /*
- * Home Page Pre-get Filter
- * Filter home page posts
+ * Content Pre-get Filter
+ * On homepage, show only cat = featured
  */
 
-if(! function_exists( 'glocal_home_posts' ) ) {
+if(! function_exists( 'glocal_pre_get_posts' ) ) {
 
-    function glocal_home_posts( $query ) {
+    function glocal_pre_get_posts( $query ) {
 
         if( is_admin() ) {
 
@@ -51,17 +51,17 @@ if(! function_exists( 'glocal_home_posts' ) ) {
 
         }
 
-        if( is_home() && is_main_query()  ) {
+        if( $query->is_home() && $query->is_main_query() ) {
 
             $query->set( 'posts_per_page', 1 );
             $query->set( 'orderby', 'rand' );
+            $query->set( 'category_name', 'featured' );
 
         }
-        
 
     }
 
-    add_filter( 'pre_get_posts', 'glocal_home_posts' );
+    add_filter( 'pre_get_posts', 'glocal_pre_get_posts' );
 
 }
 
