@@ -28,15 +28,22 @@ h2 {
     color: $primary-med-dark;
 }
 
-h1.page-title {
-    margin-top: 0;
-    // margin-bottom: 0;
-    font-size: 2.25rem;
+h1 {
+    &.page-title,
+    &.single-title {
+        margin-top: 0;
+        font-size: 2.25rem;
+    }
+
+    &.archive-title {
+        color: $white;
+    }
 }
 
 h2 {
     font-size: 2rem;
 }
+
 
 .entry-content h2:first-child {
     margin-top: 1em;
