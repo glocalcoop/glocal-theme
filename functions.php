@@ -12,7 +12,7 @@ function glocal_child_scripts_and_styles() {
 
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/assets/css/style.min.css', array( 'glocal-stylesheet' ) );
 
-	wp_register_script( 'child-slider', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/js/main.min.js', array(), '', true );
+	// wp_enqueue_script( 'child-slider', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/js/main.min.js', array(), '', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'glocal_child_scripts_and_styles' );
