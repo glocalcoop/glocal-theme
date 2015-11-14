@@ -174,7 +174,8 @@ a {
     font-size: 1.5em;
     font-weight: normal; }
   .home .home-start .home-posts .post-thumbnail img {
-    max-width: 100%; }
+    width: 100%;
+    max-width: 200px; }
   .home .home-start .home-posts.standard .post-thumbnail img {
     -webkit-filter: invert(1);
     filter: invert(1); }
