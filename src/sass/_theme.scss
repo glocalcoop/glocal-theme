@@ -84,17 +84,18 @@ time,
     color: $primary-med-light;
 
     a {
-        color: $primary-med-dark;
+        color: $anchor-color;
     }
 }
 
-a {
+a,
+a:visited {
 
-    color: $primary-med-dark;
+    color: $anchor-color;
 
     &:hover,
     &:focus {
-        color: $primary-dark;
+        color: $primary;
     }
 
 }
@@ -216,6 +217,28 @@ a {
 
         .row {
             border-top-color: $hr-color;
+        }
+
+        // Generic homepage modules
+        .module {
+
+            &.widget_recent_entries,
+            &.widget_text {
+
+                background-color: $white;
+                padding: 1em;
+                font-size: 1.0;
+
+                h2 {
+                    color: $primary;
+                }
+
+                a {
+                    color: $anchor-color;
+                }
+
+            }
+
         }
     }
 
@@ -498,7 +521,9 @@ article.post {
     }
 }
 
-// Widgets
+/***************
+* Widgets
+****************/
 
 .widget {
 

@@ -1,0 +1,55 @@
+/***************
+* Meetings
+****************/
+
+.single-meeting,
+.single-proposal,
+.single-agenda,
+.single-summary {
+
+    h1,
+    h1 time {
+        color: $white;
+    }
+
+    .entry-content {
+        background-color: $white;
+        padding: 2%;
+
+        .post-content {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-top: 2% !important;
+            border-top: 1px solid $quiet-color;
+        }
+    }
+
+}
+
+.post-type-archive-meeting .content-filter li {
+    background-color: $anchor-color;
+
+    &:hover,
+    &:focus {
+        background-color: darken( $anchor-color, 5 );
+    }
+
+    .active {
+        background-color: $black;
+    }
+}
+
+
+/***************
+* Handbook
+****************/
+
+article.handbook {
+    .entry-content {
+        a {
+            text-decoration: none;
+            border-bottom: none;
+            color: $anchor-color;
+        }
+    }
+}
