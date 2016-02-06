@@ -342,7 +342,8 @@ a:visited {
 * Posts & Pages
 ****************/
 article.post {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 5%; }
 
 .wp-caption-text {
   color: #17506C;
@@ -453,6 +454,9 @@ article.post {
   .so-widget-sow-cta button:active,
   .so-widget-sow-cta button:focus {
     color: #fff !important; }
+
+.so-panel.widget {
+  background-color: transparent !important; }
 
 .page ul.no-bullets {
   list-style: none; }
